@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playtoy</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    
+        <title>Playtoy Store </title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* Header */
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: white;
+                padding: 10px 20px;
+            }
+    
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+    
+            .logo img {
+                height: 50px;
+            }
+    
+            .title {
+                font-size: 18px;
+                font-weight: bold;
+                color: rgb(0, 81, 255);
+                margin-left: 10px;
+            }
+    
+            /* Navbar */
+            .navbar {
+                display: flex;
+                background-color: green;
+            }
+    
+            .navbar a {
+                flex: 1;
+                text-align: center;
+                padding: 15px;
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+                border-right: 1px solid white;
+            }
+    
+            .navbar a:last-child {
+                border-right: none;
+            }
+    
+            /* Login/Register */
+            .login {
+                color: rgb(15, 14, 15);
+                font-size: 14px;
+                text-decoration: none;
+                margin-right: 20px;
+            }
+    
+            .toggle {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+    
+            .toggle div {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color:gray;
+            }
+    
+            .toggle div:last-child {
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Header -->
+        <div class="header">
+           <div style="display: flex; align-items: center;">
+            <img src="dins.png" alt="logo f" style="height: 60px;">
+            <strong style="border-bottom: 3px solid black; margin-right: 10px;">DINORILO STORE</strong>
+           </div>
+            <div class="right">
+                <a href="#" class="login">Login</a>
+                <div class="toggle">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="https://www.instagram.com/zans_tamvanzx?igsh=MTg5dXR2NTF1ZHh6aQ==">INSTAGRAM</a>
+            <a href="https://www.tiktok.com/@dinorilozanozix?_t=ZS-8uCebRPoA89&_r=1">TIK TOK</a>
+            <a href="https://www.facebook.com/share/1KsXt92rEL/">FACEBOOK</aI>
+            <a href="https://ngl.link/dinorilo">SARAN ADMIN</a>
+            <a href="https://www.threads.net/@zans_tamvanzx">THREADS</a>
+            <a href="https://youtube.com/@mychannel-z9q?si=aJmsvI2CV04v1Mlx">YOUTUBR</a>
+        </div>
+    
+    </body>
+    </html>
+    
+    <style>
+
+        *{
+            font-family: "Inter", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .scroll-box{
+            display: flex;
+            width: max-content;
+            gap: 10px;
+        }
+
+        .scroll{
+            width: 100%;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+
+        .item{
+            scroll-snap-align: start;
+            width: 180px;
+            aspect-ratio: 11/16;
+        }
+
+        .item img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+
+        .scroll::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          
+          
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 pe-5" type="search" placeholder="search?" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleInterval" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="grd.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="grdd.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="grdd.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section id="tentang-elci">
+            <strong style="border-bottom:  3px solid rgb(24, 210, 89); margin-right: 10px;">KUCING DI PETSHOP KAMI</strong>
+        <hr style="border:2px solid rgb(0, 255, 89); border-radius: 5px; width: 50px;">
+        <div class="scroll mb-5">
+            <div class="scroll-box">
+                <div class="item">
+                    <img src="kuc1.jpg" alt="">
+                    
+                </div>
+                <div class="item">
+                    <img src="kuc2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kuc3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kuc4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kuc5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kuc6.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="WhatsApp Image 2025-02-19 at 11.15.04_fe074821.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="ik5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="ik4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="ik3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="ik2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="ik3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <strong style="border-bottom: 3px solid rgb(24, 210, 89); margin-right: 10px;">KELINCI DI PETSHOP KAMI</strong>
+        <hr style="border: 2px solid rgb(0, 255, 89); border-radius: 5px; width: 50px;">
+        <div class="scroll mb-5">
+            <div class="scroll-box">
+                <div class="item">
+                    <img src="kinci3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kinci1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kinci2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kinci3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kinci4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kuc6.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kuct.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kubir.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kutem.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kel.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kei.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="kuy.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <strong style="border-bottom:3px solid rgb(24, 210, 89); margin-right: 10px;">IKAN DI PETSHOP KAMI</strong>
+        <hr style="border:2px solid rgb(0, 255, 89); border-radius: 5px; width: 50px;">
+        <div class="scroll mb-5">
+            <div class="scroll-box">
+                <div class="item">
+                    <img src="bnj.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="ikk.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="ikc.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="ikj.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="iked.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="ikw.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="ikr.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdCMIEbA2T3dDG1iIuIbJU7cMFeTs7UXN54Q&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/474x/40/67/9a/40679a509dec02aa1546ce80ea0b7490.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/474x/bd/7f/c8/bd7fc85c2bca24e7bbaad1aab311b7d6.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/474x/65/59/52/65595275312909fdc6300a88eaac8972.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/474x/13/09/8e/13098e3732cf4e2ba7f17457fa5df970.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+      
+          <h5>Pesan Sekarang
+            <a href="wa.me/+6289525140560" class="ticket-btn">WhatsApp</a></h5>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            
+          </ul>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
